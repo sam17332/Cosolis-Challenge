@@ -80,11 +80,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   Rodrigo Samayoa
                 </p>
               </li>
-              <!-- Menu Footer-->
             </ul>
           </li>
-          <!-- Control Sidebar Toggle Button -->
-
         </ul>
       </div>
     </nav>
@@ -127,7 +124,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="tab">
           <button class="tablinks" onclick="openTab(event, 'cat1')" id="defaultOpen">JUGADOR</button>
           <button class="tablinks" onclick="openTab(event, 'cat2')">PARTIDOS</button>
-          <!--<button class="tablinks" onclick="openTab(event, 'cat3')">C</button>-->
         </div>
         <form method="post" action="index.php/Welcome/recibir" >
         <!--<form method="post" action="/Cosolis" action="index.php/Welcome/recibir" >-->
@@ -166,7 +162,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </div>
         </form>
         
-        
         <form method="post" action="index.php/Welcome/recibir1">
           <div id="cat2" class="tabcontent">
             <br>      
@@ -194,12 +189,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <input type="submit" class="btn btn-primary" name="" value="Enviar">
           </div>
         </form>
-
-        <!--<div id="cat3" class="tabcontent">
-          <br>
-          <h3></h3>
-          <p></p>
-        </div>-->
       </div>
     </section>
   </div>
@@ -230,14 +219,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
             evt.currentTarget.className += " active";
           }
           document.getElementById("defaultOpen").click();
-</script>
-
-<script>
-  function agregarDB()
-  {
-    var query = "insert into data(categoria, nombre, texto, tipo, valor) values ('jugador', 'nombre', 'Ingrese sus nombres', 'string', $1)";
-    response = await pool.query(query,[categoria, nombre, texto, tipo, valor]);
-  }
 </script>
 
 </body>
